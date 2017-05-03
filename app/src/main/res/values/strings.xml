@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Laboratorium 6</string>
+    <string name="txt_values">W polu poniżej podaj wartości liczbowe oddzielone przecinkiem:</string>
+    <string name="values">Wartości</string>
+    <string-array name="spin_ops">
+        <item>Wybierz operację</item>
+        <item>Dodawanie</item>
+        <item>Mnożenie</item>
+        <!-- TODO - dodać dodatkowe dwie operacje -->
+    </string-array>
+    <string name="btn_calculate">Oblicz</string>
+    <string name="wrong_data">Złe dane wejściowe. Spróbuj ponownie.</string>
+    <string name="select_op">Proszę wybrać operację do wykonania</string>
+    <string name="result">Wynik:</string>
+</resources>

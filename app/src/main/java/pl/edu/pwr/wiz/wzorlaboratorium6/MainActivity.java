@@ -7,6 +7,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         TextView resultTV = (TextView) findViewById(R.id.result);
-        resultTV.setText(getString(R.string.result) + " " + result.toString());
+        DecimalFormat df = new DecimalFormat("#.##");
+
+        resultTV.setText(getString(R.string.result) + " " + df.format(result));
         resultTV.setVisibility(View.VISIBLE);
     }
 }

@@ -4,7 +4,6 @@ package pl.edu.pwr.wiz.wzorlaboratorium6;
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.test.suitebuilder.annotation.LargeTest;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -27,7 +26,6 @@ import static android.support.test.espresso.matcher.ViewMatchers.withParent;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 
-@LargeTest
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
 
@@ -69,7 +67,7 @@ public class MainActivityTest {
         appCompatButton.perform(click());
 
         ViewInteraction textView = onView(
-                allOf(withId(R.id.result), withText("Wynik: -30.0"),
+                allOf(withId(R.id.result), withText("Wynik: -30"),
                         childAtPosition(
                                 allOf(withId(R.id.activity_main),
                                         childAtPosition(
@@ -77,7 +75,7 @@ public class MainActivityTest {
                                                 0)),
                                 4),
                         isDisplayed()));
-        textView.check(matches(withText("Wynik: -30.0")));
+        textView.check(matches(withText("Wynik: -30")));
 
     }
 

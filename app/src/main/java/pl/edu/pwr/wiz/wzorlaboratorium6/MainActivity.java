@@ -35,13 +35,17 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        Spinner opsSpin = (Spinner) findViewById(R.id.operation);
+        Spinner opsSpin = findViewById(R.id.operation);
         switch (opsSpin.getSelectedItemPosition()) {
             case    1       :       result = ac.getSum();
                                     break;
             case    2       :       result = ac.getMultiplied();
                                     break;
             /* TODO - dodać brakujące operacje */
+            case    3       :       result = ac.getAverage();
+                                    break;
+            case    4       :       result = ac.getSize().floatValue();
+                                    break;
             default         :
             case    0       :       Toast.makeText(this, getString(R.string.select_op), Toast.LENGTH_LONG).show();
                                     return;

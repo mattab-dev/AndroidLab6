@@ -7,6 +7,8 @@
         <item>Dodawanie</item>
         <item>Mnożenie</item>
         <!-- TODO - dodać dodatkowe dwie operacje -->
+        <item>Średnia</item>
+        <item>Ilość elementów</item>
     </string-array>
     <string name="btn_calculate">Oblicz</string>
     <string name="wrong_data">Złe dane wejściowe. Spróbuj ponownie.</string>

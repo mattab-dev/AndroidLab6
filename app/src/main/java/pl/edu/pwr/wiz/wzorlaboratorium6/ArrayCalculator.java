@@ -47,12 +47,17 @@ public class ArrayCalculator {
     /* Ilość elementów */
     public Integer getSize() {
         /* TODO - zwracać ilość elementów */
-        return 0;
+        return array.length;
     }
 
     /* Srednia */
     public Float getAverage() {
-        /* TODO - zwracać srednia */
-        return Float.valueOf(0);
+
+        String string;
+        Float result = Float.valueOf(0);
+        int size = getSize();
+        Float sum = getSum();
+        result = sum / size;
+        return result;
     }
 }

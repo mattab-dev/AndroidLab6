@@ -72,7 +72,13 @@ public class ArrayCalculatorTest {
     @Test
     public void getMultiplied() throws Exception {
         /* Todo napisać testy do funkcji multipled */
-        assertEquals(true, false);
+        string = "1,2,3";
+        ac = new ArrayCalculator(string);
+        assertEquals(new Float(6.0), ac.getMultiplied());
+
+        string = "-1,5,10";
+        ac = new ArrayCalculator(string);
+        assertEquals(new Float(-50.0), ac.getMultiplied());
     }
 
     @Test
@@ -91,4 +97,15 @@ public class ArrayCalculatorTest {
     }
 
     /* TODO napisać test do funkcji getAvarage */
+
+    @Test
+    public void getAverage() throws Exception {
+        string = "1,2,3,4,5,6,7,8";
+        ac = new ArrayCalculator(string);
+        assertEquals(new Float(4.5), ac.getAverage());
+
+        string = "1,3,5,10,12";
+        ac = new ArrayCalculator(string);
+        assertEquals(new Float(6.2), ac.getAverage());
+    }
 }
